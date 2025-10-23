@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Estudio Pixel W3</title>
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="header-contenido container">
+            <a href="index.html" class="logo">Studio Pixel W3</a>
+            <nav class="navegador">
+                <ul>    
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    <li><a href="#" class="activo">Presupuesto</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+
+    <main>
+        <section class="container section">
+            <h2>Solicita tu Presupuesto</h2>
+                <form class="formulario">
+                    <h3>1. Datos de Contacto</h3>
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" required>
+                        
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" required>
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" required pattern="\d{9}" title="Debe contener 9 dígitos">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+
+                        <hr class="grid-span-2"> <h3>2. Opciones de Presupuesto</h3>
+                        
+                        <label for="producto">Producto:</label>
+                        <select id="producto" required>
+                            <option value="" data-precio="0">-- Elige un producto --</option>
+                            <option value="web" data-precio="1500">Web Corporativa (1500 €)</option>
+                            <option value="ecommerce" data-precio="3000">Tienda Online (3000 €)</option>
+                            <option value="mantenimiento" data-precio="500">Mantenimiento Anual (500 €)</option>
+                        </select>
+                        
+                        <label for="plazo">Plazo (meses):</label>
+                        <input type="number" id="plazo" min="1" max="12" value="1" required>
+
+                        <div class="prioridad-grupo">
+                            <label>Extras (Añadir servicios):</label>
+                            <div style="grid-column: 2 / -1;">
+                                <input type="checkbox" id="extra1" name="extras" data-coste="300">
+                                <label for="extra1">Integración de Chatbot (+300€)</label><br>
+                                <input type="checkbox" id="extra2" name="extras" data-coste="700">
+                                <label for="extra2">SEO Avanzado (+700€)</label>
+                            </div>
+                        </div>
+
+                        <div class="grid-span-2">
+                            <p>Presupuesto Final: <strong id="presupuesto-final">0.00 €</strong></p>
+                        </div>
+
+                        <div class="condiciones-envio">
+                            <input type="checkbox" id="condiciones" required>
+                            <label for="condiciones">Acepto las condiciones de privacidad</label>
+                        </div>
+                        
+                        <div class="botones-form">
+                            <button type="submit" class="boton boton-enviar">Enviar Presupuesto</button>
+                            <button type="button" id="reset-form" class="boton boton-reset">Resetear</button>
+                        </div>
+                </form>
+        </section>
+    </main>
+
+     <footer class="pie-pagina">
+    <div class="redes-sociales">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="info-legal">
+        <p>&copy; 2025 Studio PixelPro. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    <script src="./assets/js/testimonios.js"></script>
+</body>
+</html>

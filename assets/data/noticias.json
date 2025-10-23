@@ -1,0 +1,28 @@
+[
+    {
+        "titulo": "Nuevo sitio web lanzado",
+        "fecha": "2024-06-15",
+        "contenido": "Hemos lanzado nuestro nuevo sitio web con un diseño moderno y funcionalidades mejoradas."
+    },
+    {
+        "titulo": "Actualización de la galería",
+        "fecha": "2024-06-10",
+        "contenido": "Se han añadido nuevas imágenes a nuestra galería, mostrando los últimos proyectos realizados."
+    },
+    {
+        "titulo": "Promoción de verano",
+        "fecha": "2024-06-05",
+        "contenido": "Aprovecha nuestra promoción de verano con descuentos especiales en todos nuestros servicios."
+    },
+    {
+        "titulo": "Evento de networking",
+        "fecha": "2024-06-01",
+        "contenido": "Únete a nuestro evento de networking para conectar con otros profesionales del sector."
+    },
+    {
+        "titulo": "Lanzamiento de nuevo servicio",
+        "fecha": "2024-05-28",
+        "contenido": "Estamos emocionados de anunciar el lanzamiento de nuestro nuevo servicio de consultoría digital."
+    }
+    
+]
