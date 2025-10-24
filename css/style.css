@@ -67,6 +67,7 @@ body{
 .navegador ul{
     display: flex;
     list-style: none;
+    padding: 0;
 }
 .navegador ul li a{
     color: var(--color-fondo-blanco);
@@ -352,36 +353,59 @@ main{
     transform: scale(1.05); 
 }
 
-@media (max-width: 767px) {
-
-    .testimonio {
-        margin-left: 1.5px;
-    }
-   .formulario {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .formulario h3,
-    .formulario label,
-    .formulario .grid-span-2,
-    .formulario .condiciones-envio,
-    .formulario .botones-form,
-    .formulario .prioridad-grupo,
-    .formulario .prioridad-grupo > label,
-    .formulario .prioridad-grupo > div {
-        grid-column: 1 / 2 !important; 
-        text-align: left !important; 
-    }
+@media (max-width: 768px) {
     
-    .formulario .grid-span-2 {
-        text-align: left !important;
+    .cabecera{
+        height: auto;
     }
-    
-    /* Botones apilados en móvil */
-    .formulario .botones-form {
+    .hero { 
+        margin-top: 130px; 
+    }
+    .header-contenido {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;    
+        padding: 10px 0;
+        width: 100%;
+    }
+    
+    .logo {
+        margin-bottom: 5px; 
+        font-size: 1.5rem; 
+    }
+
+    .navegador {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    
+    .navegador ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navegador ul li {
+        width: 100%;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+
+    .navegador ul li a {
+        font-size: 1rem;
+    }
+
+    .navegador ul li:last-child {
+        border-bottom: none;
+    }
+    
+    .section {
+        padding: 40px 15px;
+    }
+
+    #mapa-ubicacion {
+        height: 300px;
     }
 }
